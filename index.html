@@ -201,7 +201,7 @@
   <div id="popup"><p>🛑 Conversation stopped. No further messages will appear.</p></div>
 
   <script>
-    const socket = io('http://localhost:3001');
+    const socket = io(import.meta.env.VITE_BACKEND_URL);
     const chatBox = document.getElementById('chat');
     const imageBox = document.getElementById('images');
     const loader = document.getElementById('loader');
